@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8cc8ec;
+}
+
+#main_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 2%;
+}
+
+#dex>img:first-child {
+    position: relative;
+    width: 60vh;
+}
+
+.pokemon>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -70%);
+    height: 15vh;
+}
+
+.pokemon_info>p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-40%, 50%);
+    color: rgb(39, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.form>form {
+    display: flex;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-54%, -50%);
+    width: 70%;
+}
+
+.form>form input[type=search] {
+    width: 100%;
+    padding: 4%;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    border: 2px solid #444444;
+    box-shadow: -1px 2px 0px 0px #585f5d, -2px 2px 1px 1px #444444;
+    font-size: 2vh;
+    font-weight: bold;
+    color: rgb(39, 39, 39);
+}
+
+.bottom_buttons {
+    display: flex;
+    position: absolute;
+    bottom: 11%;
+    left: 50%;
+    transform: translate(-54%, 60%);
+    width: 70%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn_dex {
+    padding: 3%;
+    border-radius: 5px;
+    font-size: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn_dex_default {
+    border: 2px solid #444444;
+    background-color: #616161;
+    box-shadow: -1px 2px 0px 0px #494949, -2px 2px 1px 1px #444444;
+    color: rgb(37, 37, 37);
+}
+
+.btn_dex_search {
+    margin-left: 3%;
+    background-color: #69bd3c;
+    border: 2px solid #4d852a;
+    box-shadow: -1px 2px 0px 0px #509229, -2px 2px 1px 1px #3c6820;
+    color: rgb(39, 39, 39);
+}
+
+.btn_dex_shiny {
+    border: 2px solid #8b9636;
+    background-color: #c2c453;
+    box-shadow: -1px 2px 0px 0px #a19a4c, -2px 2px 1px 1px #71652b;
+    color: rgb(37, 37, 37);
+}
+
+.btn_dex_default, .btn_dex_shiny {
+    width: 100%;
+}
+
+.btn_dex_default:active {
+    box-shadow: inset 1px 2px 3px 3px #494949, inset 1px 2px 3px 3px #444444;
+}
+
+.btn_dex_search:active {
+    box-shadow: inset 1px 2px 3px 3px #509229, inset 1px 2px 3px 3px #3c6820;
+}
+
+.btn_dex_shiny:active {
+    box-shadow: inset 1px 2px 3px 3px #a19a4c, inset 1px 2px 3px 3px #71652b;
+}

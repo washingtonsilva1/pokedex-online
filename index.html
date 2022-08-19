@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css"/>
+    <title>Integração PokéAPI</title>
+</head>
+<body>
+    <div id="main_box">
+        <div id="dex">
+            <img src="dex.png"/>
+            <div class="pokemon">
+                <img class="default" src=""/>
+            </div>
+            <div class="pokemon_info">
+                <p></p>
+            </div>
+            <div class="form">
+                <form>
+                    <input id="p_name" type="search" placeholder="Pokémon name or id" required/>
+                    <input class="btn_dex btn_dex_search" type="submit" value="Search"/>
+                </form>
+            </div>
+            <div class="bottom_buttons">
+                <button id="dex_prev" class="btn_dex btn_dex_default">Previous</button>
+                <button id="dex_shiny" class="btn_dex btn_dex_shiny">Shiny</button>
+                <button id="dex_next" class="btn_dex btn_dex_default">Next</button>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="default.js"></script>
+</body>
+</html>
