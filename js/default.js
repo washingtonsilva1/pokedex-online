@@ -18,10 +18,19 @@ const renderPokemon = async (pokeId) => {
         .then(
             (p) => {
                 setPoke(JSON.stringify(p));
-                p_img.setAttribute(
-                    "src",
-                    p['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
-                );
+                if (!p_img.classList.contains("shiny")) {
+
+                    p_img.setAttribute(
+                        "src",
+                        p['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
+                    );
+                }
+                else {
+                    p_img.setAttribute(
+                        "src",
+                        p['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny']
+                    );
+                }
                 p_info.innerHTML = p['id'] + ' - ' + p['name'];
             }
         )
